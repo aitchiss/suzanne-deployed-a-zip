@@ -1,3 +1,11 @@
 body {
   color: blue;
 }
+
+button {
+  transition: transform 0.5s ease;
+}
+
+button.rotated {
+  transform: rotate(360deg);
+}
