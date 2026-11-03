@@ -1,19 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e7a7bf" />
+    <meta name="description" content="A fresh start, a little color, and room for something wonderful. Hello, world." />
+    <title>Hello, world. — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link data-testid="hello" rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h2>Home Page</h2>
-      </div>
-      <div class="content">
-        <h1>hello world!!!!!</h1>
-        <button>wooooo clickdafdafda me or don't whatever</button>
-        <p>blablablablabla</p>
-      </div>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="./" aria-label="Hello, home">
+          <svg class="brand-flower" width="29" height="29" viewBox="0 0 40 40" aria-hidden="true"><path d="M16 0h8v11l8-8 6 6-9 7h11v8H29l9 8-6 6-8-9v11h-8V29l-8 9-6-6 9-8H0v-8h11L2 9l6-6 8 8Z" fill="currentColor" /></svg>
+          hello<span class="wordmark-dot">.</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="home-link" href="/" aria-current="page"><span></span>Home</a>
+          <a class="home-link" href="/jokes">Random joke</a>
+        </nav>
+        <span class="header-note">A little joy, by design.</span>
+      </header>
+
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><svg class="small-star" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5" stroke="currentColor" stroke-width="2" /></svg> A FRESH LITTLE BEGINNING</p>
+            <h1 id="hero-title">hello<br /><em>world</em><span class="title-dot">.</span></h1>
+            <p class="intro">A fresh start, a little color, and room for something wonderful. Make yourself at home.</p>
+            <button class="joy-button" id="joy-button" type="button">
+              A little more joy
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+            <p class="joy-note" id="joy-note" role="status">Good things start with a hello.</p>
+          </div>
+
+          <figure class="hero-art" aria-label="A pink flower blooming on a rose-colored poster">
+            <div class="poster">
+              <div class="poster-top"><span>A LITTLE PINK GOES A LONG WAY</span><svg width="21" height="21" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5" stroke="currentColor" stroke-width="1.7" /></svg></div>
+              <div class="flower-wrap">
+                <svg class="bloom" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="petal-color" x1="160" y1="35" x2="230" y2="210" gradientUnits="userSpaceOnUse"><stop stop-color="#bd3d70" /><stop offset="1" stop-color="#851740" /></linearGradient>
+                    <path id="petal" d="M200 205C164 187 139 133 150 86C158 49 181 32 200 32C219 32 242 49 250 86C261 133 236 187 200 205Z" />
+                  </defs>
+                  <g class="flower-petals" fill="url(#petal-color)">
+                    <use href="#petal" /><use href="#petal" transform="rotate(45 200 200)" /><use href="#petal" transform="rotate(90 200 200)" /><use href="#petal" transform="rotate(135 200 200)" /><use href="#petal" transform="rotate(180 200 200)" /><use href="#petal" transform="rotate(225 200 200)" /><use href="#petal" transform="rotate(270 200 200)" /><use href="#petal" transform="rotate(315 200 200)" />
+                  </g>
+                  <circle cx="200" cy="200" r="57" fill="#ffe7a6" />
+                  <path d="M178 209c10 15 34 15 44 0" stroke="#963752" stroke-width="4" stroke-linecap="round" />
+                  <ellipse cx="181" cy="188" rx="3.5" ry="5" fill="#963752" /><ellipse cx="219" cy="188" rx="3.5" ry="5" fill="#963752" />
+                </svg>
+              </div>
+              <p class="poster-title">Stay curious.<br /><em>Keep blooming.</em></p>
+              <div class="poster-bottom"><span>GOOD ENERGY, ALWAYS.</span><span>01 — ∞</span></div>
+            </div>
+            <figcaption class="art-sticker"><svg class="sticker-spark" width="25" height="25" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5" stroke="currentColor" stroke-width="2" /></svg> more of the good stuff</figcaption>
+            <svg class="orbit-spark" width="54" height="54" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 1c0 21 8 29 29 29-21 0-29 8-29 29 0-21-8-29-29-29C22 30 30 22 30 1Z" fill="currentColor" /></svg>
+          </figure>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p><span class="footer-dot" aria-hidden="true"></span>A small space. A bright beginning.</p>
+        <a href="#top">BACK TO THE TOP <span aria-hidden="true">↑</span></a>
+      </footer>
     </div>
   </body>
 </html>
