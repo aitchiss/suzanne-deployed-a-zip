@@ -33,6 +33,8 @@ button, a { touch-action: manipulation; }
 .home-link:hover { background: #f9dfE8; }
 .home-link span, .footer-dot { width: 6px; height: 6px; background: var(--pink); border-radius: 50%; }
 .header-note { margin-left: auto; font-size: 12px; color: var(--muted); }
+.site-nav { display: flex; align-items: center; gap: 8px; }
+.site-nav .home-link:not([aria-current]) { border-color: transparent; color: var(--muted); }
 
 .hero { display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 8%; padding: 76px 0 94px; min-height: calc(100svh - 207px); }
 .hero-copy { padding-bottom: 4px; animation: arrive 700ms both; }
@@ -71,6 +73,15 @@ h1 em { color: var(--pink); font-family: "DM Serif Display", Georgia, serif; fon
 .site-footer a:hover { color: var(--pink); }
 .site-footer a span { font-size: 18px; }
 
+.joke-page { max-width: 780px; margin: 0 auto; padding: 72px 0 90px; min-height: calc(100svh - 207px); }
+.joke-title { font-size: clamp(44px, 7vw, 76px); letter-spacing: -3px; line-height: 1.15; margin-bottom: 36px; }
+.joke-title em { letter-spacing: -2px; }
+.joke-card { position: relative; padding: 44px 38px; margin-bottom: 30px; border: 1px solid #e8bdcc; border-radius: 12px; background: #fbe3eb; }
+.joke-spark { color: var(--pink); margin-bottom: 20px; }
+.joke-setup { margin: 0; font-size: clamp(23px, 3vw, 32px); line-height: 1.45; font-weight: 700; letter-spacing: -.7px; }
+.joke-punchline { margin: 22px 0 0; font-size: clamp(18px, 2.3vw, 23px); line-height: 1.6; color: var(--pink); }
+.joy-button[hidden] { display: none; }
+
 @keyframes arrive { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes sticker-bounce { 50% { transform: translateY(-12px) rotate(-3deg); } }
 
@@ -91,10 +102,12 @@ h1 em { color: var(--pink); font-family: "DM Serif Display", Georgia, serif; fon
 
 @media (max-width: 650px) {
   .page-shell { padding: 0 7%; }
-  .site-header { height: 84px; justify-content: space-between; gap: 20px; }
+  .site-header { height: 84px; justify-content: space-between; gap: 12px; }
   .wordmark { font-size: 28px; }
   .brand-flower { width: 25px; }
   .header-note { display: none; }
+  .site-nav { gap: 4px; }
+  .site-nav .home-link { padding: 10px 8px; gap: 6px; font-size: 10px; }
   .hero { grid-template-columns: 1fr; gap: 54px; padding: 48px 0 68px; min-height: auto; }
   .hero-copy { padding: 0; }
   .eyebrow { font-size: 9px; letter-spacing: 1.4px; margin-bottom: 23px; }
@@ -110,6 +123,8 @@ h1 em { color: var(--pink); font-family: "DM Serif Display", Georgia, serif; fon
   .site-footer { min-height: 86px; }
   .site-footer p { max-width: 170px; line-height: 1.7; font-size: 9px; }
   .site-footer a { font-size: 7px; gap: 8px; letter-spacing: .7px; white-space: nowrap; }
+  .joke-page { padding: 48px 0 64px; min-height: calc(100svh - 170px); }
+  .joke-card { padding: 28px 24px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff4f6" />
+    <meta name="description" content="Take a little laugh break with a random joke." />
+    <title>A little laugh. — Random joke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jokes.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="Hello, home">
+          <svg class="brand-flower" width="29" height="29" viewBox="0 0 40 40" aria-hidden="true"><path d="M16 0h8v11l8-8 6 6-9 7h11v8H29l9 8-6 6-8-9v11h-8V29l-8 9-6-6 9-8H0v-8h11L2 9l6-6 8 8Z" fill="currentColor" /></svg>
+          hello<span class="wordmark-dot">.</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="home-link" href="/">Home</a>
+          <a class="home-link" href="/jokes" aria-current="page"><span></span>Random joke</a>
+        </nav>
+        <span class="header-note">A little joy, by design.</span>
+      </header>
+
+      <main class="joke-page" id="main">
+        <section aria-labelledby="joke-title">
+          <p class="eyebrow">YOUR LITTLE LAUGH BREAK</p>
+          <h1 class="joke-title" id="joke-title">A little <em>laugh.</em></h1>
+          <div class="joke-card">
+            <svg class="joke-spark" width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5" stroke="currentColor" stroke-width="1.5" /></svg>
+            <div class="joke-text" role="status" aria-atomic="true">
+              <p class="joke-setup" id="joke-setup">Why did the scarecrow win an award?</p>
+              <p class="joke-punchline" id="joke-punchline">Because he was outstanding in his field.</p>
+            </div>
+          </div>
+          <button class="joy-button" id="another-joke" type="button" hidden>
+            Tell me another
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p><span class="footer-dot" aria-hidden="true"></span>A small space. A bright beginning.</p>
+        <a href="/">BACK HOME <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+  </body>
+</html>
