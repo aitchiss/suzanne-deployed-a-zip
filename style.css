@@ -1,11 +1,11 @@
 :root {
   color-scheme: light;
   --paper: #f6f5f0;
-  --ink: #243b30;
-  --muted: #6c756c;
-  --line: #dddfd5;
-  --accent: #31583f;
-  --artwork: #e8ecdf;
+  --ink: #233b52;
+  --muted: #64717f;
+  --line: #d9dfe5;
+  --accent: #315f8a;
+  --artwork: #e5edf4;
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
@@ -19,12 +19,12 @@ body {
   color: var(--ink);
 }
 
-::selection { background: #cfdbc5; color: var(--ink); }
+::selection { background: #cbdced; color: var(--ink); }
 
 button, a { -webkit-tap-highlight-color: transparent; }
 
 button:focus-visible, a:focus-visible {
-  outline: 3px solid #627d4e;
+  outline: 3px solid #4b78a0;
   outline-offset: 6px;
 }
 
@@ -58,9 +58,9 @@ button:focus-visible, a:focus-visible {
 }
 
 .brand-mark { width: 29px; height: 29px; color: var(--accent); }
-.brand-period { color: #80916c; }
+.brand-period { color: #6d8daa; }
 .header-note { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: 12px; }
-.status-dot { width: 6px; height: 6px; border-radius: 50%; background: #7c9167; }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: #6a8eaf; }
 
 .content {
   flex: 1;
@@ -83,7 +83,7 @@ h1 {
   letter-spacing: -7px;
 }
 
-h1 > span { color: #6e8264; }
+h1 > span { color: #597fa2; }
 .description { margin: 26px 0 34px; color: var(--muted); font-size: 17px; line-height: 1.7; }
 
 .hello-button {
@@ -97,16 +97,16 @@ h1 > span { color: #6e8264; }
   border: 1px solid var(--accent);
   border-radius: 9px;
   background: var(--accent);
-  color: #fbfcf8;
+  color: #f8fbfd;
   font: 500 13px/1.5 "DM Sans", "Avenir Next", Avenir, sans-serif;
   text-align: left;
   cursor: pointer;
   transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
-.button-aside { display: block; color: #cfdbcc; font-size: 11px; font-weight: 400; }
+.button-aside { display: block; color: #d0e0ef; font-size: 11px; font-weight: 400; }
 .hello-button > svg { width: 22px; height: 22px; flex: 0 0 auto; transition: transform 180ms ease; }
-.hello-button:hover { background: #254832; box-shadow: 0 6px 16px #243b3012; transform: translateY(-2px); }
+.hello-button:hover { background: #264d73; box-shadow: 0 6px 16px #233b5212; transform: translateY(-2px); }
 .hello-button:hover > svg { transform: translateX(3px); }
 .hello-button:active { transform: translateY(0); box-shadow: none; }
 .response { min-height: 20px; margin: 14px 0 0; color: var(--accent); font-size: 12px; line-height: 20px; }
@@ -119,10 +119,10 @@ h1 > span { color: #6e8264; }
   justify-content: space-between;
   aspect-ratio: 0.91;
   overflow: hidden;
-  border: 1px solid #dfe4d5;
+  border: 1px solid #d6e1eb;
   border-radius: 160px 160px 16px 16px;
   background-color: var(--artwork);
-  background-image: radial-gradient(#a8b49b45 0.7px, transparent 0.7px);
+  background-image: radial-gradient(#94abc045 0.7px, transparent 0.7px);
   background-size: 8px 8px;
   animation: arrive 900ms 120ms ease-out both;
 }
@@ -132,10 +132,10 @@ h1 > span { color: #6e8264; }
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: radial-gradient(ellipse at 50% 43%, #f8f9f0c9, transparent 65%);
+  background: radial-gradient(ellipse at 50% 43%, #f4f8fcc9, transparent 65%);
 }
 
-.artwork-top, .artwork-bottom { display: flex; align-items: center; justify-content: space-between; color: #5e7055; font-size: 8px; font-weight: 500; letter-spacing: 1.5px; }
+.artwork-top, .artwork-bottom { display: flex; align-items: center; justify-content: space-between; color: #536f88; font-size: 8px; font-weight: 500; letter-spacing: 1.5px; }
 .artwork-top { margin: 61px 42px 0; }
 .artwork-plus { font-size: 20px; font-weight: 400; line-height: 1; }
 .artwork-bottom { margin: 0 28px 25px; font-size: 8px; letter-spacing: 1.1px; }
@@ -145,7 +145,7 @@ h1 > span { color: #6e8264; }
 
 .footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 84px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
 .footer-signoff { display: inline-flex; align-items: center; gap: 10px; }
-.footer-signoff > svg { width: 17px; height: 17px; color: #80916c; }
+.footer-signoff > svg { width: 17px; height: 17px; color: #6d8daa; }
 
 @keyframes arrive {
   from { opacity: 0; transform: translateY(14px); }
