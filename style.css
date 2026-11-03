@@ -1,10 +1,10 @@
 :root {
   color-scheme: light;
-  --paper: #fff4f6;
-  --ink: #492333;
-  --muted: #805c6a;
-  --pink: #b92c60;
-  --line: #ead8de;
+  --paper: #e7a7bf;
+  --ink: #3d1425;
+  --muted: #60293f;
+  --pink: #7d123b;
+  --line: #c47d99;
   font-family: "Manrope", sans-serif;
   color: var(--ink);
   background: var(--paper);
@@ -19,7 +19,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 button, a { touch-action: manipulation; }
-::selection { background: #f8b9ce; color: var(--ink); }
+::selection { background: var(--pink); color: #fff3f7; }
 :focus-visible { outline: 3px solid var(--pink); outline-offset: 6px; }
 .page-shell { max-width: 1440px; padding: 0 6.25%; margin: 0 auto; }
 .skip-link { position: absolute; left: 20px; top: 12px; padding: 12px 20px; background: var(--ink); color: white; border-radius: 8px; transform: translateY(-160%); z-index: 10; }
@@ -29,8 +29,8 @@ button, a { touch-action: manipulation; }
 .wordmark { display: inline-flex; align-items: center; gap: 11px; font-size: 31px; font-weight: 800; letter-spacing: -1.6px; }
 .brand-flower { color: var(--pink); }
 .wordmark-dot { color: var(--pink); margin-left: -10px; }
-.home-link { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; padding: 10px 17px; border: 1px solid #e8bdcc; border-radius: 30px; transition: background 180ms; }
-.home-link:hover { background: #f9dfE8; }
+.home-link { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; padding: 10px 17px; border: 1px solid #b66b88; border-radius: 30px; transition: background 180ms; }
+.home-link:hover { background: #dc93b0; }
 .home-link span, .footer-dot { width: 6px; height: 6px; background: var(--pink); border-radius: 50%; }
 .header-note { margin-left: auto; font-size: 12px; color: var(--muted); }
 .site-nav { display: flex; align-items: center; gap: 8px; }
@@ -44,24 +44,24 @@ h1 { font-weight: 600; font-size: clamp(88px, 9.2vw, 132px); line-height: .95; l
 h1 em { color: var(--pink); font-family: "DM Serif Display", Georgia, serif; font-weight: 400; letter-spacing: -5px; }
 .title-dot { color: var(--pink); }
 .intro { max-width: 340px; margin: 0 0 30px; font-size: 14px; line-height: 1.9; color: var(--muted); }
-.joy-button { display: inline-flex; align-items: center; gap: 32px; cursor: pointer; padding: 17px 22px; border: 1px solid var(--pink); border-radius: 7px; background: var(--pink); color: #fff8fa; font-size: 12px; font-weight: 700; box-shadow: 0 4px 0 #912048; transition: transform 180ms, box-shadow 180ms, background 180ms; }
-.joy-button:hover { transform: translateY(-3px); box-shadow: 0 7px 0 #912048; background: #a92455; }
-.joy-button:active { transform: translateY(3px); box-shadow: 0 1px 0 #912048; }
+.joy-button { display: inline-flex; align-items: center; gap: 32px; cursor: pointer; padding: 17px 22px; border: 1px solid var(--pink); border-radius: 7px; background: var(--pink); color: #fff8fa; font-size: 12px; font-weight: 700; box-shadow: 0 4px 0 #590e2b; transition: transform 180ms, box-shadow 180ms, background 180ms; }
+.joy-button:hover { transform: translateY(-3px); box-shadow: 0 7px 0 #590e2b; background: #741139; }
+.joy-button:active { transform: translateY(3px); box-shadow: 0 1px 0 #590e2b; }
 .joy-button svg { transition: transform 180ms; }
 .joy-button:hover svg { transform: translateX(3px); }
 .joy-note { min-height: 20px; margin: 17px 0 0; font-size: 10px; color: var(--muted); }
 
 .hero-art { position: relative; margin: 0 5px 0 0; padding: 12px 8px; animation: arrive 850ms 120ms both; }
-.poster { position: relative; background-color: #f6bfd1; background-image: linear-gradient(#fff5 1px, transparent 1px), linear-gradient(90deg, #fff5 1px, transparent 1px); background-size: 39px 39px; border: 1px solid #edb0c5; border-radius: 12px; padding: 24px 27px 19px; transform: rotate(-5deg); box-shadow: 9px 13px 0 #f0dce3, 0 20px 50px #87344e0b; }
+.poster { position: relative; background-color: #d786a6; background-image: linear-gradient(#fff3 1px, transparent 1px), linear-gradient(90deg, #fff3 1px, transparent 1px); background-size: 39px 39px; border: 1px solid #b75d7d; border-radius: 12px; padding: 24px 27px 19px; transform: rotate(-5deg); box-shadow: 9px 13px 0 #c77a98, 0 20px 50px #68203818; }
 .poster-top, .poster-bottom { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 8px; font-weight: 800; letter-spacing: 1.5px; }
-.poster-top { color: #7a354d; }
+.poster-top { color: var(--ink); }
 .flower-wrap { margin: 5px -9px -4px; }
-.bloom { display: block; width: 100%; overflow: visible; filter: drop-shadow(0 12px 6px #a6295618); }
+.bloom { display: block; width: 100%; overflow: visible; filter: drop-shadow(0 12px 6px #75183d30); }
 .flower-petals { transform-origin: 200px 200px; transition: transform 1100ms cubic-bezier(.22,.68,.2,1); }
 .poster-title { position: relative; margin: -3px 0 28px; text-align: center; font-size: clamp(23px, 2.4vw, 34px); font-weight: 700; letter-spacing: -1.2px; line-height: 1.12; }
 .poster-title em { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
-.poster-bottom { border-top: 1px solid #c77a9355; padding-top: 14px; font-size: 7px; letter-spacing: 1.1px; }
-.art-sticker { position: absolute; right: -38px; bottom: 77px; display: flex; align-items: center; gap: 9px; padding: 15px 18px; border-radius: 5px; transform: rotate(7deg); background: #fff9ef; box-shadow: 0 5px 14px #6e264515; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.poster-bottom { border-top: 1px solid #9a3c6255; padding-top: 14px; font-size: 7px; letter-spacing: 1.1px; }
+.art-sticker { position: absolute; right: -38px; bottom: 77px; display: flex; align-items: center; gap: 9px; padding: 15px 18px; border-radius: 5px; transform: rotate(7deg); background: #f4cfdd; box-shadow: 0 5px 14px #6e264525; font-size: 11px; font-weight: 700; white-space: nowrap; }
 .sticker-spark { color: var(--pink); font-size: 25px; line-height: 1; }
 .orbit-spark { position: absolute; top: -16px; right: -20px; color: var(--pink); transform: rotate(9deg); }
 .hero-art.is-celebrating .art-sticker { animation: sticker-bounce 600ms ease; }
@@ -76,7 +76,7 @@ h1 em { color: var(--pink); font-family: "DM Serif Display", Georgia, serif; fon
 .joke-page { max-width: 780px; margin: 0 auto; padding: 72px 0 90px; min-height: calc(100svh - 207px); }
 .joke-title { font-size: clamp(44px, 7vw, 76px); letter-spacing: -3px; line-height: 1.15; margin-bottom: 36px; }
 .joke-title em { letter-spacing: -2px; }
-.joke-card { position: relative; padding: 44px 38px; margin-bottom: 30px; border: 1px solid #e8bdcc; border-radius: 12px; background: #fbe3eb; }
+.joke-card { position: relative; padding: 44px 38px; margin-bottom: 30px; border: 1px solid #b66b88; border-radius: 12px; background: #e09ab5; }
 .joke-spark { color: var(--pink); margin-bottom: 20px; }
 .joke-setup { margin: 0; font-size: clamp(23px, 3vw, 32px); line-height: 1.45; font-weight: 700; letter-spacing: -.7px; }
 .joke-punchline { margin: 22px 0 0; font-size: clamp(18px, 2.3vw, 23px); line-height: 1.6; color: var(--pink); }
