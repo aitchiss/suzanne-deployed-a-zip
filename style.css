@@ -166,26 +166,6 @@ body {
   outline-offset: 4px;
 }
 
-.content p {
-  display: inline-block;
-  margin: 1.75rem 0 0;
-  padding: 0.5rem 1.1rem;
-  font-size: 1.05rem;
-  color: var(--ink-soft);
-  background: var(--mint);
-  border-radius: 16px;
-  position: relative;
-}
-
-.content p::before {
-  content: "♡ ";
-  color: var(--pink-deep);
-}
-.content p::after {
-  content: " ♡";
-  color: var(--pink-deep);
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
