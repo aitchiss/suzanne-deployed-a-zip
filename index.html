@@ -1,19 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Home</title>
-    <link data-testid="hello" rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A simple starter page built with HTML and CSS." />
+    <title>Hello World — A web starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" />
+    <link data-testid="hello" rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h2>Home Page</h2>
+  <body id="top">
+    <header class="site-header">
+      <div class="page-width header-inner">
+        <a class="wordmark" href="#top">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect width="32" height="32" rx="8" fill="#203d30" />
+            <path d="m8.5 11.5 4.5 4.5-4.5 4.5m8.5 0h6" fill="none" stroke="#e4f5ae" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Hello World<span aria-hidden="true">.</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#details">Project details</a>
+        </nav>
       </div>
-      <div class="content">
-        <h1>hello world!!!!!</h1>
-        <button>wooooo clickdafdafda me or don't whatever</button>
-        <p>blablablablabla</p>
+    </header>
+
+    <main class="page-width">
+      <section class="hero" id="overview" aria-labelledby="welcome-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> A web starter</p>
+          <h1 id="welcome-title">Hello,<br /><span>world.</span></h1>
+          <p class="intro">A simple starting point for the web. Built with HTML and CSS, and ready for whatever comes next.</p>
+          <a class="primary-link" href="#details">
+            View project details
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+              <path d="M10 4v11m-4-4 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="hero-figure">
+          <svg class="hero-art" viewBox="0 0 560 422" role="img" aria-labelledby="art-title">
+            <title id="art-title">A terminal displaying Hello, world on a drafting grid</title>
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0v20" fill="none" stroke="#d5dfd0" />
+              </pattern>
+              <radialGradient id="paper" cx=".5" cy=".49" r=".64">
+                <stop stop-color="#f5f8ee" />
+                <stop offset="1" stop-color="#e5ecdf" />
+              </radialGradient>
+              <linearGradient id="screen" x2="1" y2="1">
+                <stop stop-color="#263f34" />
+                <stop offset="1" stop-color="#192e26" />
+              </linearGradient>
+              <filter id="terminal-shadow" x="-20%" y="-35%" width="140%" height="175%">
+                <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#213c2d" flood-opacity=".19" />
+              </filter>
+            </defs>
+            <path fill="url(#paper)" d="M0 0h560v422H0z" />
+            <path fill="url(#grid)" d="M0 0h560v422H0z" />
+            <g fill="none" stroke="#94a993" stroke-width="1">
+              <circle cx="280" cy="211" r="178" />
+              <circle cx="280" cy="211" r="142" stroke-dasharray="3 5" />
+              <circle cx="280" cy="211" r="105" />
+              <path d="M24 211h512M280 24v374" opacity=".65" />
+              <path d="M38 24H24v14m498-14h14v14M24 384v14h14m484 0h14v-14" />
+            </g>
+            <circle cx="402" cy="81.4" r="14" fill="#edf3e6" stroke="#69836e" />
+            <circle cx="402" cy="81.4" r="7" fill="#d7ed93" stroke="#69836e" />
+            <circle cx="102" cy="211" r="4" fill="#486652" />
+            <circle cx="280" cy="389" r="4" fill="#486652" />
+            <g filter="url(#terminal-shadow)">
+              <rect x="94" y="122" width="372" height="175" rx="13" fill="url(#screen)" />
+              <path d="M94 163.5h372" stroke="#5d7567" />
+              <circle cx="114" cy="143" r="3" fill="#d7ed93" />
+              <circle cx="127" cy="143" r="3" fill="#8ea996" />
+              <circle cx="140" cy="143" r="3" fill="#8ea996" />
+              <g class="art-type">
+                <text x="280" y="147" fill="#c1d1c4" text-anchor="middle" font-size="11" letter-spacing="1.3">TERMINAL</text>
+                <text x="117" y="204" fill="#f1f6ec" font-size="16"><tspan fill="#dfefa9">~ $</tspan> echo "Hello, world."</text>
+                <text x="117" y="231" fill="#afc2b3" font-size="16">Hello, world.</text>
+              </g>
+              <rect class="terminal-cursor" x="117" y="252" width="9" height="16" rx="1" fill="#dfefa9" />
+            </g>
+          </svg>
+          <figcaption><span>Fig. 01</span><span>The first line</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="details" id="details" aria-labelledby="details-title">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> Under the hood</p>
+          <h2 id="details-title">Project details</h2>
+        </div>
+        <dl class="project-specs">
+          <div>
+            <dt><span aria-hidden="true">01</span> HTML</dt>
+            <dd>Gives the page its content and structure.</dd>
+          </div>
+          <div>
+            <dt><span aria-hidden="true">02</span> CSS</dt>
+            <dd>Sets the typography, colors, and responsive layout.</dd>
+          </div>
+          <div>
+            <dt><span aria-hidden="true">03</span> Netlify</dt>
+            <dd>Hosts and serves the static site.</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <span>Hello World.</span>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
