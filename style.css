@@ -106,63 +106,13 @@ body {
 }
 
 .header h2 {
-  margin: 0.5rem 0 0;
+  margin: 0;
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 2px 0 var(--pink-deep);
-}
-
-/* little kawaii face */
-.face {
-  position: relative;
-  display: inline-block;
-  width: 72px;
-  height: 60px;
-  background: var(--butter);
-  border-radius: 50% 50% 46% 46%;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 0 rgba(107, 74, 110, 0.15);
-  animation: wiggle 3s ease-in-out infinite;
-}
-.eye {
-  position: absolute;
-  top: 22px;
-  width: 8px;
-  height: 10px;
-  background: var(--ink);
-  border-radius: 50%;
-}
-.eye:nth-child(1) { left: 20px; }
-.eye:nth-child(2) { right: 20px; }
-.blush {
-  position: absolute;
-  top: 32px;
-  width: 12px;
-  height: 7px;
-  background: var(--pink-deep);
-  opacity: 0.45;
-  border-radius: 50%;
-}
-.blush:nth-child(3) { left: 9px; }
-.blush:nth-child(4) { right: 9px; }
-.mouth {
-  position: absolute;
-  top: 32px;
-  left: 50%;
-  width: 14px;
-  height: 8px;
-  transform: translateX(-50%);
-  border: 3px solid var(--ink);
-  border-top: none;
-  border-radius: 0 0 14px 14px;
-}
-
-@keyframes wiggle {
-  0%, 100% { transform: rotate(-4deg) }
-  50%      { transform: rotate(4deg) }
 }
 
 /* ---------- content ---------- */
