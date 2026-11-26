@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#160f12" />
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,96,500;1,96,500&amp;family=DM+Mono:wght@400;500&amp;display=swap" />
     <link data-testid="hello" rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <h2>Home Page</h2>
-      </div>
-      <div class="content">
-        <h1>hello world!!!!!</h1>
-        <button>wooooo clickdafdafda me or don't whatever</button>
-        <p>blablablablabla</p>
-      </div>
+      <header class="header">
+        <div class="wordmark"><span class="orbit" aria-hidden="true"></span>Home Page</div>
+        <span class="edition"><span aria-hidden="true"></span>After Hours Edition</span>
+      </header>
+
+      <main class="content">
+        <section class="intro" aria-labelledby="home-title">
+          <p class="eyebrow">01 <span>/</span> The Home Page</p>
+          <h1 id="home-title">hello <em>world!!!!!</em></h1>
+          <p class="aside">blablablablabla</p>
+          <button class="mood-switch" type="button" aria-pressed="false" aria-describedby="mood-hint" aria-controls="eclipse" hidden>
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="M10 3.5a6.5 6.5 0 0 1 0 13z" fill="currentColor" />
+            </svg>
+            wooooo clickdafdafda me or don't whatever
+          </button>
+          <span class="visually-hidden" id="mood-hint">Toggles a brighter glow around the eclipse.</span>
+        </section>
+
+        <figure class="plate" id="eclipse">
+          <img src="eclipse.svg" width="680" height="600" alt="A copper ring of light above a dark, rippling horizon." />
+          <div class="plate-mark" aria-hidden="true"><span>Fig. 01</span><span class="crosshair"></span></div>
+          <figcaption><span>The Eclipse</span><span aria-hidden="true">01 / 01</span></figcaption>
+        </figure>
+      </main>
+
+      <footer class="footer">
+        <span>Home <span class="footer-slash">/</span> After Hours</span>
+        <span>End of Page <span class="footer-dot" aria-hidden="true"></span></span>
+      </footer>
     </div>
+    <script>
+      const moodSwitch = document.querySelector('.mood-switch');
+      const eclipse = document.querySelector('#eclipse');
+
+      moodSwitch.addEventListener('click', () => {
+        const isBright = moodSwitch.getAttribute('aria-pressed') === 'false';
+        moodSwitch.setAttribute('aria-pressed', String(isBright));
+        eclipse.classList.toggle('is-bright', isBright);
+      });
+
+      moodSwitch.hidden = false;
+    </script>
   </body>
 </html>
